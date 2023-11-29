@@ -1,4 +1,4 @@
-body {
+/* body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,10 +6,10 @@ body {
     margin: 0;
     background: #222;
     font-family: 'Open Sans', sans-serif;
-}
+} */
 
 .card {
-    background-color: whitesmoke;
+    background-color: #222;
     padding: 2em;
     border-radius: 30px;
     width: 100%;

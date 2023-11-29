@@ -5,6 +5,7 @@ var weatherApiKey = "12231537ac4043736627becc4bfd9203";
 var currentWeather = document.querySelector('#current-weather');
 var currentCity = document.querySelector('#current-city');
 var currentTemp = document.querySelector('#current-temp');
+var feelsLike = document.querySelector('#feels-like');
 var conditionIcon = document.querySelector('#description-icon');
 var weatherDescription = document.querySelector('#weather-description');
 var sunRise = document.querySelector('#morning-sun');
@@ -35,7 +36,7 @@ window.addEventListener('load', () => {
 
     // create click event that grabs search-bar value and plugs value into geocode function
     function geocode(city){
-        fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${weatherApiKey}`)
+        fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${weatherApiKey}&units=imperial`)
         .then(response => response.json())
         .then(data =>{
             console.log(data)
@@ -43,10 +44,9 @@ window.addEventListener('load', () => {
         })
     }
 
-
     function currentWeather(lat, lon){
             //using fetch to retrieve data
-            fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${weatherApiKey}`)
+            fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${weatherApiKey}&units=imperial`)
                 .then((response) => {
                     return response.json();
                 })
@@ -54,7 +54,7 @@ window.addEventListener('load', () => {
                 .then((data) => {
                     console.log(data)
                     //destructured variables
-                    var { temp } = data.main;
+                    var { temp, feels_like } = data.main;
                     var  place = data.name;
                     console.log(place)
                     var { description, icon } = data.weather[0];
@@ -68,7 +68,8 @@ window.addEventListener('load', () => {
                     console.log(sunsetGMT)
 
                     conditionIcon.src = iconUrl;
-                    currentWeather.textContent = `${temp}`
+                    currentTemp.textContent = `Current Temperature: ${Math.round(temp)} °F`
+                    feelsLike.textContent = `Feels like: ${Math.round(temp)} °F`
                     currentCity.textContent = `${place}`;
                     weatherDescription.textContent = `Conditions: ${description}`;
                     sunRise.textContent = `Sunrise: ${sunriseGMT.toLocaleTimeString()}`;
@@ -76,4 +77,3 @@ window.addEventListener('load', () => {
                 });
             }
             });
-// });
