@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -113,17 +113,10 @@
     <div id="hour-19" class="row time-block">
       <div>7pm</div>
       <textarea id="textInput" class="description" rows="3"></textarea>
-      <button id="saveButton" class="btn savebtn" aria-label="regular">
+      <button class="saveButton" class="btn savebtn" aria-label="regular">
         <i class="fa-regular fa-hard-drive" aria-hidden="true" style="color: #0a1e5c;"></i>
       </button>
     </div>
-
-    <div id="hour-20" class="row time-block">
-      <div>8pm</div>
-      <textarea id="textInput" class="description" rows="3"></textarea>
-      <button id="saveButton" class="btn savebtn" aria-label="regular">
-        <i class="fa-regular fa-hard-drive" aria-hidden="true" style="color: #0a1e5c;"></i>
-      </button>
     </div>
   </div>
   
@@ -174,4 +167,44 @@
   <script src="https://kit.fontawesome.com/0ee96920fc.js" crossorigin="anonymous"></script><!--used for the icons in the save/play buttons for the schedular in the html-->
   <script src="./assets/weather.js"></script>
 </body>
+        <!--basic structure for youtube player. may need to add more later------------------------------------------------------------------->
+
+        <div class="youtubeContainer">
+          <h2>Youtube</h2>
+          <input
+            id="youtubeSearchInput"
+            type="text"
+            placeholder="Don't waste too much time!"
+          />
+          <button id="youtubeBtn">
+            <!--add an onclick event that is connected to the id in the input above-->
+            <i class="fa-brands fa-youtube"></i
+            ><!--icon used for play button-->
+          </button>
+        </div>
+
+        <!--basic structure for the github repositorie. may need to add more later----------------------------------------------------------->
+
+        <div class="gitHub">
+          <h2>Github User</h2>
+          <input
+            name="username"
+            id="username"
+            type="text"
+            class="form-input"
+            placeholder="type user name here"
+          />
+          <button type="submit" class="gitBtn">Find User</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0ee96920fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--used for the icons in the save/play buttons for the schedular in the html-->
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
