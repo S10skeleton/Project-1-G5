@@ -76,4 +76,11 @@ function init() {
 }
 
 init();
+
+function clearLocalStorage() {
+    localStorage.clear();
+    document.getElementById("textInput").value = '';
+}
+
+document.getElementById('clearButton').addEventListener('click', clearLocalStorage);
 // querySelectorAll text input class loop thru new array add eventListener which is saveButton() 
