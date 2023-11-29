@@ -1,4 +1,4 @@
-const API_KEY = 'AIzaSyDyL-p1U0ANtwm1RScCBDvqFFkwXbfPZl0';
+const youtubeAPIKey = 'AIzaSyDyL-p1U0ANtwm1RScCBDvqFFkwXbfPZl0';
 
 function searchYoutube() {
     const searchButton = document.getElementById('searchInput').value;
