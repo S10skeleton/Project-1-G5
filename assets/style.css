@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 30%;
-} */
+} 
 
 .mainContainer {
     display: flex;
@@ -52,3 +52,24 @@ body {
     padding: 10px; /* Example */
 }
 
+.weatherBox {
+    position: absolute;
+    top: 10%;
+    right: 40%;
+}
+
+.youtubeContainer {
+    position: absolute;
+    top: 20%;
+    right: 41%;
+    background-color: rgb(34, 141, 235, .7);
+    border-radius: 10px;
+   
+}
+
+.gitHub {
+    position: absolute;
+    top: 40%;
+    right: 40%;
+   
+}
