@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--we will need to add the weather api script (will possibly need to go at the end of the body)-->
-  <!--we will need to add the youtube api script (will possibly need to go at the end of the body)-->
-  <!--we will need to add the github api script (will possibly need to go at the end of the body)-->
-  <link rel="stylesheet" href="./assets/style.css"/>
-  <title>Daily Dashboard</title>
-</head>
-<body>
-  <header class="welcomDisplay">
-    <h1 class="headerOne">Welcome to your Daily Dashboard</h1>
-    <p>Let's get ready to code!</p>
-    <p id="currentDay" class="lead"></p> <!--Link the DailyJs time and date to this div-->
-  </header>
-<!--section for the schedule---------------------------------------------------------------------------------------------------------->
-<!--<div class="scheduleContainer> === the overarching container for the timeblocks-->
-  <div class="scheduleContainer">
-
-    <!--the time blocks (to see the css that was added via html check out 05-Third-Party-APIs/ 02-Challenge/ lines 43-47 in the html)-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--we will need to add the weather api script (will possibly need to go at the end of the body)-->
+    <!--we will need to add the youtube api script (will possibly need to go at the end of the body)-->
+    <!--we will need to add the github api script (will possibly need to go at the end of the body)-->
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Daily Dashboard</title>
+  </head>
+  <body>
+    <header class="welcomeDisplay">
+      <!--corrected missing e in Welcome-->
+      <h1 class="headerOne">Welcome to your Daily Dashboard</h1>
+      <p>Let's get ready to code!</p>
+      <p id="currentDay" class="lead"></p>
+      <!--Link the DailyJs time and date to this div-->
+    </header>
+    <!--section for the schedule---------------------------------------------------------------------------------------------------------->
+    <!--<div class="scheduleContainer> === the overarching container for the timeblocks-->
+    <div class="mainContianer">
+      <div class="scheduleContainer">
+        <!--the time blocks (to see the css that was added via html check out 05-Third-Party-APIs/ 02-Challenge/ lines 43-47 in the html)-->
 
     <div id="hour-08" class="row time-block"> <!--removed past present and future from this class. add it by creating a variable for this div then use if/else statments with.addClass to add them in. see me for example code if needed.-->
       <div>8AM</div>
@@ -126,7 +128,7 @@
     <div class="weatherCast" id="weather"></div>
   </div>
 
-  <!--basic structure for youtube player. may need to add more later------------------------------------------------------------------->
+        <!--basic structure for youtube player. may need to add more later------------------------------------------------------------------->
 
   <!-- <div class="youtubeContainer">
     <h2>Youtube</h2>
@@ -146,18 +148,26 @@
 </div>
   <!--basic structure for the github repositorie. may need to add more later----------------------------------------------------------->
 
-  <div>
-    <h2>Github User</h2>
-    <input name="username" id="username" type="text" class="form-input" placeholder="type user name here">
-    <button type="submit" class="gitBtn">Find User</button>
-  </div>
-
-
-
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
-  <script src="https://kit.fontawesome.com/0ee96920fc.js" crossorigin="anonymous"></script><!--used for the icons in the save/play buttons for the schedular in the html-->
-  <script src="./assets/script.js"></script>
-</body>
+        <div>
+          <h2>Github User</h2>
+          <input
+            name="username"
+            id="username"
+            type="text"
+            class="form-input"
+            placeholder="type user name here"
+          />
+          <button type="submit" class="gitBtn">Find User</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0ee96920fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--used for the icons in the save/play buttons for the schedular in the html-->
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
