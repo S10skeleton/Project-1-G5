@@ -11,15 +11,20 @@ body {
     background-color: rgb(49, 49, 247, .3);
     width: 30%;
     border-radius: 15px;
-    padding: 10px;
-    margin: 15px;
-
+    padding: 20px;
+    margin: 85px;
+    
 }
 
 .scheduleContainer {
+    margin: 85px;
+    padding: 10px;
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     width: 30%;
+    background-color: rgb(34, 141, 235, .7);
+
 } 
 
 .mainContainer {
@@ -28,21 +33,13 @@ body {
     
 }
 
-.scheduleContainer {
-    flex: 1;
-    flex-direction: grid;
-    background-color: rgb(186, 223, 255, .7);
-    padding: 10px;
-    border-radius: 10px;
-    /* Additional styles for padding, margin, etc., as needed */
-}
 
 .rightContainer {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-top: -350px;
-    margin-left: 50%;
+    margin-top: -450px;
+    margin-left: 45%;
     /* Additional styles for padding, margin, etc., as needed */
 }
 
@@ -55,21 +52,40 @@ body {
 .weatherBox {
     position: absolute;
     top: 10%;
-    right: 40%;
+    right: 39%;
+    background-color: rgb(34, 141, 235, .7);
+    border-radius: 20px;
+    margin: 10px;
+    max-width: 50%;
 }
 
 .youtubeContainer {
     position: absolute;
-    top: 20%;
-    right: 41%;
+    top: 30%;
+    right: 37%;
     background-color: rgb(34, 141, 235, .7);
     border-radius: 10px;
-   
+    padding: 20px;
+    max-width: 50%;
+    margin: 40px;
+
+    
 }
 
 .gitHub {
     position: absolute;
-    top: 40%;
-    right: 40%;
+    margin: 20px;
+    top: 60%;
+    right: 36%;
+    background-color: rgb(34, 141, 235, .7);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 50%;
+
    
+}
+
+.time-block {
+    max-width: 300px;
+    min-height: 100px;
 }
