@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 4a2cbd47b13451efb201b5e4804379947e8243d8
 body {
 background-image: url(./Images/SunnyDayClip.gif) ;
 background-size: cover;
@@ -45,13 +40,12 @@ background-repeat: no-repeat;
     flex-direction: column;
     margin-top: -450px;
     margin-left: 45%;
-    /* Additional styles for padding, margin, etc., as needed */
+
 }
 
 .weatherBox, .youtubeContainer {
-    /* Styles for weatherBox and youtubeContainer if needed */
-    margin: 10px; /* Example */
-    padding: 10px; /* Example */
+    margin: 10px; 
+    padding: 10px;
 }
 
 .weatherBox {
@@ -72,7 +66,7 @@ background-repeat: no-repeat;
     border-radius: 10px;
     padding: 20px;
     max-width: 50%;
-    margin: 40px; */
+    margin: 40px;
 
     
 }
@@ -93,8 +87,4 @@ background-repeat: no-repeat;
 .time-block {
     max-width: 300px;
     min-height: 100px;
-<<<<<<< HEAD
->>>>>>> 441aa181de215a14a519d0c7ab783a104c184f50
-=======
->>>>>>> 4a2cbd47b13451efb201b5e4804379947e8243d8
 }
