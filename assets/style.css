@@ -1,9 +1,14 @@
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 4a2cbd47b13451efb201b5e4804379947e8243d8
 body {
-  background-image: url(./Images/SunnyDayClip.gif) ;
-  background-size: cover;
-  min-height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
+background-image: url(./Images/SunnyDayClip.gif) ;
+background-size: cover;
+min-height: 100vh;
+background-position: center;
+background-repeat: no-repeat;
 
 }
 
@@ -88,4 +93,8 @@ body {
 .time-block {
     max-width: 300px;
     min-height: 100px;
+<<<<<<< HEAD
+>>>>>>> 441aa181de215a14a519d0c7ab783a104c184f50
+=======
+>>>>>>> 4a2cbd47b13451efb201b5e4804379947e8243d8
 }
