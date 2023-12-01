@@ -161,3 +161,49 @@ function clearLocalStorage() {
 
 // document.getElementById('clearButton').addEventListener('click', clearLocalStorage);
 // querySelectorAll text input class loop thru new array add eventListener which is saveButton() 
+
+//section for GitHub------------------------------------------------------------
+//repository data points of interest
+//data for the repositories = [0]
+//[0].clone_url data used to get the url
+//[0].owner.login data used to get the github username
+
+//variables needed
+var gitBtn = document.querySelector(".gitBtn")
+var gitUserSearch = document.querySelector("#username")
+
+//add eventlistener
+gitBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  const gitUserRepos = gitUserSearch.value.trim();
+  githubRepos(gitUserRepos);
+});
+
+//api call function
+function githubRepos(gitUserRepos) {
+  return fetch(`https://api.github.com/users/${gitUserRepos}/repos`)
+  .then(function(response) {
+    if (!response.ok) {
+      console.log('error: fetch repo failed')
+    }
+    return response.json();
+  })
+  .then(function(repositories) {
+    console.log(repositories);
+    var gitRepoLists = document.getElementById("gitRepoLists")
+    //add for loop to create the list of repositories into the html bellow.
+    for (let i = 0; i < repositories.length; i++) {
+      var getGitRepos = repositories[i].clone_url;
+      var gitName = repositories[i].owner.login
+      var repoListing = document.createElement('div');
+      repoListing.classList.add('gitRepoCss'); //Use this class to change the CSS if needed// the repos were generated through JavaS to html page
+      repoListing.innerHTML = `<p>${gitName}:  <a href="${getGitRepos}" target="_blank">${getGitRepos}</a></p>`;
+      gitRepoLists.appendChild(repoListing);
+    }
+  })
+  .then(null, function (error) {
+    console.log('did not fetch repos', error.message);
+    return null;
+  });
+}
+//end of GitHub section --------------------------------------------------------------
