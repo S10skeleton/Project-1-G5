@@ -145,18 +145,18 @@ init();
 
 function clearLocalStorage() {
     localStorage.clear();
-    document.querySelector("eight").value = "";
-    document.querySelector("nine").value = "";
-    document.querySelector("ten").value = "";
-    document.querySelector("eleven").value = "";
-    document.querySelector("twelve").value = "";
-    document.querySelector("one").value = "";
-    document.querySelector("two").value = "";
-    document.querySelector("three").value = "";
-    document.querySelector("four").value = "";
-    document.querySelector("five").value = "";
-    document.querySelector("#six").value = "";
-    document.querySelector("#seven").value = "";
+    document.querySelector("#eight").value = " ";
+    document.querySelector("#nine").value = " ";
+    document.querySelector("#ten").value = " ";
+    document.querySelector("#eleven").value = " ";
+    document.querySelector("#twelve").value = " ";
+    document.querySelector("#one").value = " ";
+    document.querySelector("#two").value = " ";
+    document.querySelector("#three").value = " ";
+    document.querySelector("#four").value = " ";
+    document.querySelector("#five").value = " ";
+    document.querySelector("#six").value = " ";
+    document.querySelector("#seven").value = " ";
 }
 
 // document.getElementById('clearButton').addEventListener('click', clearLocalStorage);
