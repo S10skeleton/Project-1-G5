@@ -1,6 +1,10 @@
 
+
+
 body {
     background-image: url(./Images/SunnyDayClip.gif) ;
+    /* added this other option for daytime background*/
+    /* background-image: url(./Images/waterfalls-nature.gif); */
     background-size: cover;
     min-height: 100vh;
     background-position: center;
