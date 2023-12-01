@@ -79,8 +79,29 @@ init();
 
 function clearLocalStorage() {
     localStorage.clear();
-    document.getElementById("textInput").value = '';
+    var textinput = document.querySelector(".description").value
+    // for (var i = 0; i < 13; i++) {
+
+        // textinput.value = '';
+        // $("#hour-08 textarea").value = ""
+        // $("#hour-09 textarea").value = ""
+        // $("#hour-10 textarea").value = ""
+        // $("#hour-11 textarea").value = ""
+        // $("#hour-12 textarea").value = ""
+        // $("#hour-13 textarea").value = ""
+        // $("#hour-14 textarea").value = ""
+        // $("#hour-15 textarea").value = ""
+        // $("#hour-16 textarea").value = ""
+        // $("#hour-17 textarea").value = ""
+        // $("#hour-18 textarea").value = ""
+       document.querySelector("#six").value = ""
+       document.querySelector("#seven").value = ""
+       document.querySelector("description").value = ""
+       
+    //    console.log(document.querySelector("#seven").value)
+    // }
+//  var textInput = document.querySelector(".description").value
 }
 
-document.getElementById('clearButton').addEventListener('click', clearLocalStorage);
+// document.getElementById('clearButton').addEventListener('click', clearLocalStorage);
 // querySelectorAll text input class loop thru new array add eventListener which is saveButton() 
