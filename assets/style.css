@@ -9,10 +9,12 @@ body {
     }
     
     .parentContainer {
-        display: flex; /* Enables Flexbox layout */
-        justify-content: center; /* Spaces out children */
-        align-items: start; /* Aligns children at the start of the cross axis */
-        margin-right: 400px;
+        display: flex;
+        justify-content: flex-start; 
+        align-items: start; 
+        margin-left: 5%;
+        margin-top: 5%;
+        
     }
     
     
@@ -20,20 +22,21 @@ body {
         border-radius: 10px;
         border: 1px solid #ccc;
         padding: 20px;
-        margin: 20px; /* Consistent margin */
-        background-color: rgba(34, 141, 235, 0.7);
-        max-width: 40%; /* Width relative to the parent */
+        margin: 20px; 
+        background-image: linear-gradient(to bottom right, rgb(167, 135, 99, .9) , rgb(23, 94, 55, .5));
+        max-width: 100%; 
     }
     
     .scheduleContainer {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
-        grid-template-rows: repeat(4, auto); /* 4 rows, height adjusts to content */
-        gap: 10px; /* Space between grid items */
-        margin: 20px; /* Adjust as needed */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 10px; 
+        margin: 20px;
+        margin-top: 5%;
         padding: 10px;
         border-radius: 10px;
-        background-color: rgba(34, 141, 235, 0.7);
+        background-image: linear-gradient(to bottom right, rgb(167, 135, 99, .8) , rgb(23, 94, 55, .5));
         max-width: 100%;
         border: 1px solid #ccc;
     
@@ -43,38 +46,47 @@ body {
     
     
     .mainContainer {
-        flex: 1;
-        max-width: 40%; /* Adjust as needed */
+        max-width: 50%; 
         padding: 20px;
-        margin-right: 20px; /* Adds some space between the containers */
+        margin-right: 20px; 
         margin-top: 20px;
     }
     
     .rightContainer {
-        width: 30%;
+        margin-top: -10px;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
         padding: 20px;
-        margin-top:-240px;
+        
+        
     }
     
     .weatherBox {
+        
         border-radius: 10px;
         border: 1px solid #ccc;
-        max-width: 80%;
-        margin: 10px 0; 
-        padding: 10px;
-        /* min-width: 100%; */
-        background-color: rgb(34, 141, 235, .7);
+        max-width: 40%;
+        margin: 10px 0 40px ; 
+        padding: 20px;
+        background-image: linear-gradient(to bottom right, rgb(167, 135, 99, .8) , rgb(23, 94, 55, .7));
     
     }
+
+    .rightWeather {
+        font-size: 20px;
+    }
+
+     
     
     .gitHub {
         border-radius: 10px;
         border: 1px solid #ccc;
-        
         margin: 10px 0; 
-        padding: 10px;
-        /* min-width: 100%; */
-        background-color: rgb(34, 141, 235, .7);
+        padding: 20px;
+        max-width: 100%;
+        background-image: linear-gradient(to bottom right, rgb(167, 135, 99, .8) , rgb(23, 94, 55, .5));
     
     }
     
@@ -85,8 +97,8 @@ body {
     
     .youtubeContainer {
         width: 133%;
-        background-color: rgb(34, 141, 235, .7);
-        padding: 10px;
+        background-image: linear-gradient(to bottom right, rgb(167, 135, 99, .8) , rgb(23, 94, 55, .5));
+        padding: 20px;
         border-radius: 10px;
         border: 1px solid #ccc;
         width: 557px;
@@ -94,11 +106,23 @@ body {
     
     
     }
+
+    .youtubeIcon {
+        width: 30px;
+        height: auto;
+        border-radius: 7px;
+    }
+
+    #clearButton {
+        border: 2px solid rgb(255, 0, 0, .5);
+    }
     
     .time-block {
+        background-image: linear-gradient(to bottom right, rgb(167, 135, 99, .8) , rgb(23, 94, 55, .5));
         border: 1px solid #ccc;
         padding: 10px;
         border-radius: 5px;
+        font-size: 17px;
     
             
     }
@@ -119,5 +143,8 @@ body {
         }
         .parentContainer {
             flex-direction: column;
+        }
+        .weatherBox {
+            grid-template-columns: 1fr;
         }
     }
