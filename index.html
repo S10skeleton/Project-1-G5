@@ -1,9 +1,32 @@
 <!DOCTYPE html>
-
+<html lang="en">
+<<<<<<<<< Temporary merge branch 1
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--we will need to add the weather api script (will possibly need to go at the end of the body)-->
+    <!--we will need to add the youtube api script (will possibly need to go at the end of the body)-->
+    <!--we will need to add the github api script (will possibly need to go at the end of the body)-->
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Daily Dashboard</title>
+  </head>
+  <body>
+    <header class="welcomeDisplay">
+      <!--corrected missing e in Welcome-->
+      <h1 class="headerOne">Welcome to your Daily Dashboard</h1>
+      <p>Let's get ready to code!</p>
+      <p id="currentDay" class="lead"></p>
+      <!--Link the DailyJs time and date to this div-->
+    </header>
+    <!--section for the schedule---------------------------------------------------------------------------------------------------------->
+    <!--<div class="scheduleContainer> === the overarching container for the timeblocks-->
+    <div class="mainContianer">
+      <div class="scheduleContainer">
+        <!--the time blocks (to see the css that was added via html check out 05-Third-Party-APIs/ 02-Challenge/ lines 43-47 in the html)-->
+=========
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--we will need to add the weather api script (will possibly need to go at the end of the body)-->
   <!--we will need to add the youtube api script (will possibly need to go at the end of the body)-->
   <!--we will need to add the github api script (will possibly need to go at the end of the body)-->
@@ -24,98 +47,101 @@
 
     <div id="hour-08" class="row time-block"> <!--removed past present and future from this class. add it by creating a variable for this div then use if/else statments with.addClass to add them in. see me for example code if needed.-->
       <div>8AM</div>
-      <textarea id="textInput" class="description" rows="3"></textarea>
-      <button id="saveButton" class="btn savebtn" aria-label="regular">
+      <textarea id="eight" class="description" rows="3"></textarea>
+      <button class="saveButton"  aria-label="regular">
         <i class="fa-regular fa-hard-drive" aria-hidden="true" style="color: #0a1e5c;"></i><!--this is the icon used in the save button-->
       </button>
     </div>
 
     <div id="hour-09" class="row time-block">
       <div>9AM</div>
-      <textarea id="textInput" class="description" rows="3"></textarea>
-      <button id="saveButton" class="btn savebtn" aria-label="regular">
+      <textarea id="nine" class="description" rows="3"></textarea>
+      <button class="saveButton"  aria-label="regular">
         <i class="fa-regular fa-hard-drive" aria-hidden="true" style="color: #0a1e5c;"></i>
       </button>
     </div>
 
     <div id="hour-10" class="row time-block">
       <div>10AM</div>
-      <textarea id="textInput" class="description" rows="3"></textarea>
-      <button id="saveButton" class="btn savebtn" aria-label="regular">
+      <textarea id="ten" class="description" rows="3"></textarea>
+      <button class="saveButton"  aria-label="regular">
         <i class="fa-regular fa-hard-drive" aria-hidden="true" style="color: #0a1e5c;"></i>
       </button>
     </div>
 
     <div id="hour-11" class="row time-block">
       <div>11AM</div>
-      <textarea id="textInput" class="description" rows="3"></textarea>
-      <button id="saveButton" class="btn savebtn" aria-label="regular">
+      <textarea id="eleven" class="description" rows="3"></textarea>
+      <button class="saveButton"  aria-label="regular">
         <i class="fa-regular fa-hard-drive" aria-hidden="true" style="color: #0a1e5c;"></i>
       </button>
     </div>
 
     <div id="hour-12" class="row time-block">
       <div>12pm</div>
-      <textarea id="textInput" class="description" rows="3"></textarea>
-      <button id="saveButton" class="btn savebtn" aria-label="regular">
+      <textarea id="twelve" class="description" rows="3"></textarea>
+      <button class="saveButton"  aria-label="regular">
         <i class="fa-regular fa-hard-drive" aria-hidden="true" style="color: #0a1e5c;"></i>
       </button>
     </div>
 
     <div id="hour-13" class="row time-block">
       <div>1pm</div>
-      <textarea id="textInput" class="description" rows="3"></textarea>
-      <button id="saveButton" class="btn savebtn" aria-label="regular">
+      <textarea id="one" class="description" rows="3"></textarea>
+      <button class="saveButton"  aria-label="regular">
         <i class="fa-regular fa-hard-drive" aria-hidden="true" style="color: #0a1e5c;"></i>
       </button>
     </div>
 
     <div id="hour-14" class="row time-block">
       <div>2pm</div>
-      <textarea id="textInput" class="description" rows="3"></textarea>
-      <button id="saveButton" class="btn savebtn" aria-label="regular">
+      <textarea id="two" class="description" rows="3"></textarea>
+      <button class="saveButton"  aria-label="regular">
         <i class="fa-regular fa-hard-drive" aria-hidden="true" style="color: #0a1e5c;"></i>
       </button>
     </div>
 
     <div id="hour-15" class="row time-block">
       <div>3pm</div>
-      <textarea id="textInput" class="description" rows="3"></textarea>
-      <button id="saveButton" class="btn savebtn" aria-label="regular">
+      <textarea id="three" class="description" rows="3"></textarea>
+      <button class="saveButton"  aria-label="regular">
         <i class="fa-regular fa-hard-drive" aria-hidden="true" style="color: #0a1e5c;"></i>
       </button>
     </div>
 
     <div id="hour-16" class="row time-block">
       <div>4pm</div>
-      <textarea id="textInput" class="description" rows="3"></textarea>
-      <button id="saveButton" class="btn savebtn" aria-label="regular">
+      <textarea id="four" class="description" rows="3"></textarea>
+      <button class="saveButton"  aria-label="regular">
         <i class="fa-regular fa-hard-drive" aria-hidden="true" style="color: #0a1e5c;"></i>
       </button>
     </div>
 
     <div id="hour-17" class="row time-block">
       <div>5pm</div>
-      <textarea id="textInput" class="description" rows="3"></textarea>
-      <button id="saveButton" class="btn savebtn" aria-label="regular">
+      <textarea id="five" class="description" rows="3"></textarea>
+      <button class="saveButton"  aria-label="regular">
         <i class="fa-regular fa-hard-drive" aria-hidden="true" style="color: #0a1e5c;"></i>
       </button>
     </div>
 
     <div id="hour-18" class="row time-block">
       <div>6pm</div>
-      <textarea id="textInput" class="description" rows="3"></textarea>
-      <button id="saveButton" class="btn savebtn" aria-label="regular">
+      <textarea id="six" class="description" rows="3"></textarea>
+      <button class="saveButton"  aria-label="regular">
         <i class="fa-regular fa-hard-drive" aria-hidden="true" style="color: #0a1e5c;"></i>
       </button>
     </div>
 
     <div id="hour-19" class="row time-block">
       <div>7pm</div>
-      <textarea id="textInput" class="description" rows="3"></textarea>
-      <button class="saveButton" class="btn savebtn" aria-label="regular">
+      <textarea id="seven" class="description" rows="3"></textarea>
+      <button class="saveButton"  aria-label="regular">
         <i class="fa-regular fa-hard-drive" aria-hidden="true" style="color: #0a1e5c;"></i>
       </button>
+    </div>
+    <div>
+      <button onclick="clearLocalStorage()">Clear</button>
     </div>
     </div>
   </div>
@@ -143,13 +169,13 @@
 
   <!--basic structure for youtube player. may need to add more later------------------------------------------------------------------->
 
-  <div class="youtubeContainer">
+  <!-- <div class="youtubeContainer">
     <h2>Youtube</h2>
     <input id="youtubeSearchInput" type="text" placeholder="Don't waste too much time!">
-    <button id="youtubeBtn"><!--add an onclick event that is connected to the id in the input above-->
-      <i class="fa-brands fa-youtube"></i><!--icon used for play button-->
+    <button id="youtubeBtn">
+      <i class="fa-brands fa-youtube"></i>
     </button>
-  </div>
+  </div> -->
 
   <!--basic structure for the github repositorie. may need to add more later----------------------------------------------------------->
 
@@ -164,27 +190,22 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
-  <script src="https://kit.fontawesome.com/0ee96920fc.js" crossorigin="anonymous"></script><!--used for the icons in the save/play buttons for the schedular in the html-->
+  <script src="https://kit.fontawesome.com/0ee96920fc.js" crossorigin="anonymous"></script>
   <script src="./assets/weather.js"></script>
-</body>
-        <!--basic structure for youtube player. may need to add more later------------------------------------------------------------------->
 
         <div class="youtubeContainer">
-          <h2>Youtube</h2>
-          <input
-            id="youtubeSearchInput"
-            type="text"
-            placeholder="Don't waste too much time!"
-          />
-          <button id="youtubeBtn">
-            <!--add an onclick event that is connected to the id in the input above-->
-            <i class="fa-brands fa-youtube"></i
-            ><!--icon used for play button-->
-          </button>
+          <h1>YouTube</h1>
+          <h3>You like distractions.</h3>
+        
+          <input type="text" id="searchInput" placeholder="How about some cats?">
+          <button onclick="searchYoutube()"> <i class="fa-brands fa-youtube"></i></button>
+        
+          <div id="player"></div>
         </div>
 
-        <!--basic structure for the github repositorie. may need to add more later----------------------------------------------------------->
 
+
+<<<<<<<<< Temporary merge branch 1
         <div class="gitHub">
           <h2>Github User</h2>
           <input
@@ -208,3 +229,20 @@
     <script src="./assets/script.js"></script>
   </body>
 </html>
+=========
+  <div>
+    <h2>Github User</h2>
+    <input name="username" id="username" type="text" class="form-input" placeholder="type user name here">
+    <button type="submit" class="gitBtn">Find User</button>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+  <script src="https://kit.fontawesome.com/0ee96920fc.js" crossorigin="anonymous"></script><!--used for the icons in the save/play buttons for the schedular in the html-->
+  <script src="./assets/weather.js"></script>
+</body>
+</html>
+>>>>>>>>> Temporary merge branch 2
