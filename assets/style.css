@@ -43,7 +43,7 @@ body {
     }
 
     .description {
-        width: 95%;
+        width: 100%;
     }
     
     
@@ -74,17 +74,21 @@ body {
         border-radius: 10px;
         border: 1px solid #ccc;
         max-width: 100%;
-        /* height: 180px; */
         margin: 10px 0 40px ; 
         padding: 15px;
         background-image: linear-gradient(to bottom right, rgb(167, 135, 99, .8) , rgb(23, 94, 55, .7));
     
     }
 
+    .icon {
+        margin-left: 35px;
+    }
+
     .leftWeather, .rightWeather, .middleRight {
         font-size: 20px;
         flex: 1; /* Each child takes equal space */
         margin: 10px;
+        margin-left: 3%;
     }
 
  
@@ -114,7 +118,7 @@ body {
     }
     
     .youtubeContainer {
-        width: 87%;
+        min-width: 93%;
         background-image: linear-gradient(to bottom right, rgb(167, 135, 99, .8) , rgb(23, 94, 55, .5));
         padding: 20px;
         border-radius: 10px;
