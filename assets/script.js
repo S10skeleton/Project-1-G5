@@ -191,6 +191,7 @@ function githubRepos(gitUserRepos) {
   .then(function(repositories) {
     console.log(repositories);
     var gitRepoLists = document.getElementById("gitRepoLists")
+    gitRepoLists.innerHTML = '';
     //add for loop to create the list of repositories into the html bellow.
     for (let i = 0; i < repositories.length; i++) {
       var getGitRepos = repositories[i].clone_url;
