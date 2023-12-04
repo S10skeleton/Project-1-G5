@@ -51,11 +51,9 @@ function getCurrentWeather(lat, lon) {
       })
   
       .then((data) => {
-        console.log(data);
         //destructured variables
         var { temp, feels_like } = data.main;
         var place = data.name;
-        console.log(place);
         var { description, icon } = data.weather[0];
         var { sunrise, sunset } = data.sys;
   
@@ -63,12 +61,10 @@ function getCurrentWeather(lat, lon) {
   
         var sunriseGMT = new Date(sunrise * 1000);
         var sunsetGMT = new Date(sunset * 1000);
-        console.log(sunriseGMT);
-        console.log(sunsetGMT);
   
         conditionIcon.src = iconUrl;
-        currentTemp.textContent = `Current Temperature: ${Math.round(temp)} °F`;
-        feelsLike.textContent = `Feels like: ${Math.round(feels_like)} °F`;
+        currentTemp.textContent = `Current Temp: ${Math.round(temp)} °F`;
+        feelsLike.textContent = `Feels Like: ${Math.round(feels_like)} °F`;
         currentCity.textContent = `${place}`;
         weatherDescription.textContent = `Conditions: ${description}`;
         sunRise.textContent = `Sunrise: ${sunriseGMT.toLocaleTimeString()}`;
@@ -86,7 +82,6 @@ window.addEventListener("load", () => {
     navigator.geolocation.getCurrentPosition((position) => {
       lat = position.coords.latitude;
       long = position.coords.longitude;
-      console.log(lat, long);
       getCurrentWeather(lat, long);
     });
 }
@@ -182,28 +177,43 @@ gitBtn.addEventListener("click", function (event) {
 //api call function
 function githubRepos(gitUserRepos) {
   return fetch(`https://api.github.com/users/${gitUserRepos}/repos`)
-  .then(function(response) {
-    if (!response.ok) {
-      console.log('error: fetch repo failed')
-    }
-    return response.json();
-  })
-  .then(function(repositories) {
-    console.log(repositories);
-    var gitRepoLists = document.getElementById("gitRepoLists")
-    //add for loop to create the list of repositories into the html bellow.
-    for (let i = 0; i < repositories.length; i++) {
-      var getGitRepos = repositories[i].clone_url;
-      var gitName = repositories[i].owner.login
-      var repoListing = document.createElement('div');
-      repoListing.classList.add('gitRepoCss'); //Use this class to change the CSS if needed// the repos were generated through JavaS to html page
-      repoListing.innerHTML = `<p>${gitName}:  <a href="${getGitRepos}" target="_blank">${getGitRepos}</a></p>`;
-      gitRepoLists.appendChild(repoListing);
-    }
-  })
-  .then(null, function (error) {
-    console.log('did not fetch repos', error.message);
-    return null;
-  });
+    .then(function (response) {
+      if (!response.ok) {
+        console.log('error: fetch repo failed')
+        userNotFound();
+        return null;
+      }
+      return response.json();
+    })
+    .then(function (repositories) {
+      if (repositories) {
+        console.log(repositories);
+        var gitRepoLists = document.getElementById("gitRepoLists")
+        gitRepoLists.innerHTML = '';
+        if (repositories.length === 0) {
+          userNotFound();
+        } else {
+          //add for loop to create the list of repositories into the html bellow.
+          for (let i = 0; i < repositories.length; i++) {
+            var getGitRepos = repositories[i].clone_url;
+            var gitName = repositories[i].owner.login
+            var repoListing = document.createElement('div');
+            repoListing.classList.add('gitRepoCss'); //Use this class to change the CSS if needed// the repos were generated through JavaS to html page
+            repoListing.innerHTML = `<p>${gitName}:  <a href="${getGitRepos}" target="_blank">${getGitRepos}</a></p>`;
+            gitRepoLists.appendChild(repoListing);
+
+          }
+        }
+      }
+    })
+    .then(null, function (error) {
+      console.log('did not fetch repos', error.message);
+      return null;
+    });
+}
+
+function userNotFound() {
+  var gitRepoLists = document.getElementById('gitRepoLists');
+  gitRepoLists.innerHTML = '<p>User not found</p>';
 }
 //end of GitHub section --------------------------------------------------------------
