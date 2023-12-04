@@ -31,7 +31,7 @@ Have a quality README (with unique name, description, technologies used, screens
 An application to help coders start their day. It provides a daily schedule, current weather for your local area, a youtube api to listen to your favorite music,
 and a github API to access your recent repositories. The background image is controlled dynamically based on the time of day. 
 
-## Links to Repository and Deplayed Application 
+## Links to Repository and Deployed Application 
 
 https://s10skeleton.github.io/Project-1-G5/
 
