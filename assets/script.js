@@ -96,7 +96,7 @@ searchButton.addEventListener("click", function () {
 // create click event that grabs search-bar value and plugs value into geocode function
 function geocode(city) {
   fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${weatherApiKey}&units=imperial`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${weatherApiKey}&units=imperial`
   )
     .then((response) => response.json())
     .then((data) => {
