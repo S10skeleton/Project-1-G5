@@ -1,171 +1,179 @@
-
 body {
-    /* background-image: url(./Images/SunnyDayClip.gif) ; */
-    background-size: cover;
-    min-height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    }
-    
-    .parentContainer {
-        display: flex;
-        justify-content: flex-start; 
-        align-items: start; 
-        margin-left: 5%;
-        margin-top: 5%;
-        
-    }
-    
-    
-    .welcomeDisplay {
-        border-radius: 10px;
-        border: 1px solid #ccc;
-        padding: 20px;
-        margin: 20px; 
-        background-image: linear-gradient(to bottom right, rgb(167, 135, 99, .9) , rgb(23, 94, 55, .5));
-        max-width: 100%; 
-    }
-    
-    .scheduleContainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, auto);
-        gap: 10px; 
-        margin: 20px;
-        margin-top: 6%;
-        padding: 10px;
-        border-radius: 10px;
-        background-image: linear-gradient(to bottom right, rgb(167, 135, 99, .8) , rgb(23, 94, 55, .5));
-        max-width: 100%;
-        border: 1px solid #ccc;
-    
-    }
+  /* background-image: url(./Images/SunnyDayClip.gif) ; */
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-    .description {
-        width: 95%;
-    }
-    
-    
-    
-    
-    .mainContainer {
-        max-width: 50%; 
-        padding: 20px;
-        margin-right: 20px; 
-        margin-top: 20px;
-    }
-    
-    .rightContainer {
-        margin-top: -10px;
-        margin-left: 5%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        padding: 20px;
-        
-        
-    }
-    
-    .weatherBox {
-        display: flex;
-        justify-content: space-between; /* Space out the child elements */
-        align-items: start;
-        border-radius: 10px;
-        border: 1px solid #ccc;
-        max-width: 100%;
-        margin: 10px 0 40px ; 
-        padding: 15px;
-        background-image: linear-gradient(to bottom right, rgb(167, 135, 99, .8) , rgb(23, 94, 55, .7));
-    
-    }
+.parentContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  margin-left: 5%;
+  margin-top: 5%;
+}
 
-    .icon {
-        margin-left: 35px;
-    }
+.welcomeDisplay {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(167, 135, 99, 0.9),
+    rgb(23, 94, 55, 0.5)
+  );
+  max-width: 100%;
+}
 
-    .leftWeather, .rightWeather, .middleRight {
-        font-size: 20px;
-        flex: 1; /* Each child takes equal space */
-        margin: 10px;
-        margin-left: 3%;
-    }
+.scheduleContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+  margin: 20px;
+  margin-top: 6%;
+  padding: 10px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(167, 135, 99, 0.8),
+    rgb(23, 94, 55, 0.5)
+  );
+  max-width: 100%;
+  border: 1px solid #ccc;
+}
 
- 
+.description {
+  width: 95%;
+}
 
-     
-    
-    .gitHub {
-        
-        border-radius: 10px;
-        border: 1px solid #ccc;
-        margin: 30px 20px; 
-        padding: 20px;
-        max-width: 100%;
-        background-image: linear-gradient(to bottom right, rgb(167, 135, 99, .8) , rgb(23, 94, 55, .5));
-    
-    }
+.mainContainer {
+  max-width: 50%;
+  padding: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
 
-    .githubIcon {
-        width: 30px;
-        height: auto;
-        border-radius: 7px;
-    }
-    
-    .videoInput {
-        padding-bottom: 10px;
-        
-    }
-    
-    .youtubeContainer {
-        min-width: 93%;
-        background-image: linear-gradient(to bottom right, rgb(167, 135, 99, .8) , rgb(23, 94, 55, .5));
-        padding: 20px;
-        border-radius: 10px;
-        border: 1px solid #ccc;
-        line-height: 10px;
-    
-    
-    }
+.rightContainer {
+  margin-top: -10px;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+}
 
-    .youtubeIcon {
-        width: 30px;
-        height: auto;
-        border-radius: 7px;
-    }
+.weatherBox {
+  display: flex;
+  justify-content: space-between; /* Space out the child elements */
+  align-items: start;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  max-width: 100%;
+  margin: 10px 0 40px;
+  padding: 15px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(167, 135, 99, 0.8),
+    rgb(23, 94, 55, 0.7)
+  );
+}
 
-    #clearButton {
-        border: 2px solid rgb(255, 0, 0, .5);
-    }
-    
-    .time-block {
-        background-image: linear-gradient(to bottom right, rgb(167, 135, 99, .8) , rgb(23, 94, 55, .5));
-        border: 1px solid #ccc;
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 17px;
-    
-            
-    }
-    @media (max-width: 768px) {
-        .mainContainer {
-            flex-direction: column;
-        }
-    
-        .welcomeDisplay, .scheduleContainer, .rightContainer {
-            width: 100%;
-        }
-    
-        .weatherBox, .youtubeContainer, .gitHub {
-            max-width: 90%; 
-        }
-        .scheduleContainer {
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .parentContainer {
-            flex-direction: column;
-        }
-        .weatherBox {
-            grid-template-columns: 1fr;
-        }
-    }
+.icon {
+  margin-left: 20px;
+}
+
+.leftWeather,
+.rightWeather,
+.middleRight {
+  font-size: 20px;
+  flex: 1; /* Each child takes equal space */
+  margin: 10px;
+  margin-left: 3%;
+}
+
+.gitHub {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin: 30px 20px;
+  padding: 20px;
+  max-width: 100%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(167, 135, 99, 0.8),
+    rgb(23, 94, 55, 0.5)
+  );
+}
+
+.githubIcon {
+  width: 30px;
+  height: auto;
+  border-radius: 7px;
+}
+
+.videoInput {
+  padding-bottom: 10px;
+}
+
+.youtubeContainer {
+  min-width: 93%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(167, 135, 99, 0.8),
+    rgb(23, 94, 55, 0.5)
+  );
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  line-height: 10px;
+}
+
+.youtubeIcon {
+  width: 30px;
+  height: auto;
+  border-radius: 7px;
+}
+
+#clearButton {
+  border: 2px solid rgb(255, 0, 0, 0.5);
+}
+
+.time-block {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(167, 135, 99, 0.8),
+    rgb(23, 94, 55, 0.5)
+  );
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 17px;
+}
+@media (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+
+  .welcomeDisplay,
+  .scheduleContainer,
+  .rightContainer {
+    width: 100%;
+  }
+
+  .weatherBox,
+  .youtubeContainer,
+  .gitHub {
+    max-width: 90%;
+  }
+  .scheduleContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .parentContainer {
+    flex-direction: column;
+  }
+  .weatherBox {
+    grid-template-columns: 1fr;
+  }
+}
