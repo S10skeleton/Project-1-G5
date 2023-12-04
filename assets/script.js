@@ -51,11 +51,9 @@ function getCurrentWeather(lat, lon) {
       })
   
       .then((data) => {
-        console.log(data);
         //destructured variables
         var { temp, feels_like } = data.main;
         var place = data.name;
-        console.log(place);
         var { description, icon } = data.weather[0];
         var { sunrise, sunset } = data.sys;
   
@@ -63,8 +61,6 @@ function getCurrentWeather(lat, lon) {
   
         var sunriseGMT = new Date(sunrise * 1000);
         var sunsetGMT = new Date(sunset * 1000);
-        console.log(sunriseGMT);
-        console.log(sunsetGMT);
   
         conditionIcon.src = iconUrl;
         currentTemp.textContent = `Current Temp: ${Math.round(temp)} °F`;
@@ -86,7 +82,6 @@ window.addEventListener("load", () => {
     navigator.geolocation.getCurrentPosition((position) => {
       lat = position.coords.latitude;
       long = position.coords.longitude;
-      console.log(lat, long);
       getCurrentWeather(lat, long);
     });
 }
