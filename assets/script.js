@@ -67,8 +67,8 @@ function getCurrentWeather(lat, lon) {
         console.log(sunsetGMT);
   
         conditionIcon.src = iconUrl;
-        currentTemp.textContent = `Current Temperature: ${Math.round(temp)} °F`;
-        feelsLike.textContent = `Feels like: ${Math.round(feels_like)} °F`;
+        currentTemp.textContent = `Current Temp: ${Math.round(temp)} °F`;
+        feelsLike.textContent = `Feels Like: ${Math.round(feels_like)} °F`;
         currentCity.textContent = `${place}`;
         weatherDescription.textContent = `Conditions: ${description}`;
         sunRise.textContent = `Sunrise: ${sunriseGMT.toLocaleTimeString()}`;
