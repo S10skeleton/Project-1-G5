@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', 'sans-serif';
+  font-family: "Open Sans", "sans-serif";
   background-size: cover;
   min-height: 100vh;
   background-position: center;
@@ -114,11 +114,11 @@ body {
 }
 
 .gitRepoCss {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: rgb(233, 233, 209, .5);
-    height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(233, 233, 209, 0.5);
+  height: 100px;
 }
 
 .videoInput {
