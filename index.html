@@ -4,8 +4,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--we will need to add the weather api script (will possibly need to go at the end of the body)-->
+    <!--we will need to add the youtube api script (will possibly need to go at the end of the body)-->
+    <!--we will need to add the github api script (will possibly need to go at the end of the body)-->
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Daily Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Edu+TAS+Beginner:wght@700&family=Kay+Pho+Du&family=Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
     
@@ -15,6 +21,7 @@
           <h1 class="headerOne">Welcome to your Daily Dashboard</h1>
           <h2>Let's get ready to code!</h2>
           <h3 id="currentDay" class="lead"></h3>
+          <!--Link the DailyJs time and date to this div-->
         </header>
         <!--section for the schedule---------------------------------------------------------------------------------------------------------->
         <!--<div class="scheduleContainer> === the overarching container for the timeblocks-->
@@ -24,7 +31,7 @@
 
     
 
-    <div id="hour-08" class="row time-block"> 
+    <div id="hour-08" class="row time-block"> <!--removed past present and future from this class. add it by creating a variable for this div then use if/else statments with.addClass to add them in. see me for example code if needed.-->
       <div>8AM</div>
       <textarea id="eight" class="description" rows="3"></textarea>
       <button class="saveButton"  aria-label="regular">
@@ -139,14 +146,14 @@
           <div class="weatherCast" id="weather"></div>
           <div class="weather" id="current-weather">
             <h3 class="city" id="current-city"></h3>
-            <img src="" alt=""  class="icon" id="description-icon" />
+            <div class="description" id="weather-description"></div>
+            <img src="" alt=""  class="icon" id="description-icon">
           </div>
       </div>
-      <div class="leftWeather">  
+      <div class="leftWeather">
+        <br>  
           <div class = "temp" id="current-temp"></div>
-          <div class="feelslike" id="feels-like"></div>
-          <div class="description" id="weather-description"></div>
-      
+          <div class="feelslike" id="feels-like"></div><br>
           <div class="sunrise" id="morning-sun"></div>
           <div class="sunset" id="evening-sun"></div>
       </div>    
@@ -154,13 +161,13 @@
       </div> 
       <div class="youtubeContainer">
         <h1>YouTube <img src="./assets/Images/YouTubeIcon.png" alt="" class="youtubeIcon"></h1>
+        <h3>You like distractions.</h3>
         <div class="videoInput">
-          <input type="text" id="searchInput" placeholder="Search Youtube!">
+          <input type="text" id="searchInput" placeholder="How about some cats?">
           <button onclick="searchYoutube()"> <i class="fa-brands fa-youtube"></i></button>
         </div>
         <div id="player"></div>
       </div>
-      <!--github repos container-->
       <div class="gitHub">
         <h2> <img src="./assets/Images/GitHubIcon.png" alt="" class="githubIcon"> Github User</h2>
         <input
@@ -171,11 +178,12 @@
           placeholder="type user name here"
         />
         <button type="submit" class="gitBtn">Find User</button>
-        <div style="width:400px;height:150px;line-height:3em;overflow:scroll;padding:5px;"><!--added this div to create the scroll box-->
+        <div style="height:350px;line-height:3em;overflow:scroll;"><!--added this div to create the scroll box-->
           <section id="gitRepoLists"></section><!--added this to html delete comment after adding-->
-        </div><!--closing of the scroll box-->
+          </div>
       </div>
     </div>  
+      
   </div>
 
   <!--basic structure for youtube player. may need to add more later------------------------------------------------------------------->
@@ -197,55 +205,11 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
   <script src="https://kit.fontawesome.com/0ee96920fc.js" crossorigin="anonymous"></script>
-  <script src="./assets/weather.js"></script>
+  <script src="./assets/script.js"></script>
 
 
 
 
 
 
-        
-      </div>
-    </div>
-  </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/0ee96920fc.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--used for the icons in the save/play buttons for the schedular in the html-->
-    <script src="./assets/script.js"></script>
-  </body>
 </html>
-
-
-
-
-
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
-  <script src="https://kit.fontawesome.com/0ee96920fc.js" crossorigin="anonymous"></script><!--used for the icons in the save/play buttons for the schedular in the html-->
-  <script src="./assets/weather.js"></script>
-</body>
-</html>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/0ee96920fc.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--used for the icons in the save/play buttons for the schedular in the html-->
-    <script src="./assets/script.js"></script>
-  </body>
-</html>
-
- 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
-  <script src="https://kit.fontawesome.com/0ee96920fc.js" crossorigin="anonymous"></script><!--used for the icons in the save/play buttons for the schedular in the html-->
-  <script src="./assets/weather.js"></script>
-</body>
-</html>
-
