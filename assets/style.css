@@ -118,7 +118,11 @@ body {
   border-radius: 10px;
   padding: 10px;
   background-color: rgb(233, 233, 209, 0.5);
-  height: 100px;
+  height: 75px;
+}
+
+.gitSearch {
+    margin-bottom: 20px;
 }
 
 .videoInput {
