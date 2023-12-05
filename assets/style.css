@@ -121,6 +121,10 @@ body {
   height: 75px;
 }
 
+.gitSearch {
+    margin-bottom: 20px;
+}
+
 .videoInput {
   padding-bottom: 10px;
 }
