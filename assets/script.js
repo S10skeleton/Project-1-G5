@@ -236,7 +236,7 @@ function updateBackgroundImage() {
   } else if (hour >= 15 && hour < 18) {
       backgroundImage = 'url(assets/Images/afternoon.png)';
   } else if (hour >= 18 && hour < 21) {
-      backgroundImage = 'url(assets/Images/nighttime.png)';
+      backgroundImage = 'url(assets/Images/sunset.png)';
   } else {
       backgroundImage = 'url(assets/Images/nighttime.png)';
   }
