@@ -40,3 +40,5 @@ https://github.com/S10skeleton/Project-1-G5
 ## ScreenShot
 
 ![screenshot](./assets/Images/Screenshot.png)
+
+![screenshot](./assets/Images/Screenshot2.png)
